@@ -47,14 +47,13 @@ const Quote = (props) => {
     <ul className={styles.quotes}>
       {quotes.map((quote) => {
         return (
-          <Fragment>
-            <QuoteList
-              key={quote.id}
-              quote={quote.quote}
-              anime={quote.anime}
-              character={quote.character}
-            />
-          </Fragment>
+          <QuoteList
+            key={quote.id}
+            id={quote.id}
+            quote={quote.quote}
+            anime={quote.anime}
+            character={quote.character}
+          />
         );
       })}
     </ul>

@@ -4,7 +4,7 @@ import styles from "./QuoteList.module.css";
 
 const QuoteList = (props) => {
   const listDisplay = (
-    <li>
+    <li key={props.id}>
       <h1>"{props.quote}"</h1>
       <p className={styles.character}>-{props.character}</p>
       <p className={styles.character}> {props.anime}</p>
