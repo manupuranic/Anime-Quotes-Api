@@ -7,20 +7,20 @@ const Quote = (props) => {
   const [quotes, setQuotes] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const fetchRandomQuotes = async () => {
-    const response = await fetch("https://animechan.vercel.app/api/random");
-    const data = await response.json();
-    const { anime, character, quote } = data;
-    console.log(Math.floor(Math.random() * 100));
-    let loadedQuote = [];
-    loadedQuote.push({
-      id: Math.floor(Math.random() * 100),
-      anime: anime,
-      character: character,
-      quote: quote,
-    });
-    setQuotes(loadedQuote);
-  };
+  // const fetchRandomQuotes = async () => {
+  //   const response = await fetch("https://animechan.vercel.app/api/random");
+  //   const data = await response.json();
+  //   const { anime, character, quote } = data;
+  //   console.log(Math.floor(Math.random() * 100));
+  //   let loadedQuote = [];
+  //   loadedQuote.push({
+  //     id: Math.floor(Math.random() * 100),
+  //     anime: anime,
+  //     character: character,
+  //     quote: quote,
+  //   });
+  //   setQuotes(loadedQuote);
+  // };
 
   const fetchTenRandomQuotes = useCallback(async () => {
     setIsLoading(true);
