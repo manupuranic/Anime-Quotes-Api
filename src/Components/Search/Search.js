@@ -16,7 +16,7 @@ const Search = (props) => {
           id="search"
           placeholder="   Search"
           size="500"
-          autocomplete="off"
+          autoComplete="off"
         />
         <button className={styles.button}>
           <SearchOutlinedIcon style={{ fontSize: 30, color: grey }} />
