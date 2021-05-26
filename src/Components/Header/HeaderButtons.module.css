@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+.button {
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.button button {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  padding: 1rem;
+  border: none;
+  background-color: rgb(113, 47, 236);
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.button li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.button button:hover {
+  background-color: rgb(123, 61, 240);
+  border-color: rgb(113, 47, 236);
+}
+
+.button button:active {
+  animation: button-drop 300ms ease;
+}
+
+@keyframes button-drop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100 {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 726px) {
+  .button button {
+    padding: 0px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 2px;
+    background-color: white;
+    color: rgb(75, 75, 75);
+    box-shadow: none;
+    right: 1%;
+    font-size: 8px;
+    margin-left: 5px;
+  }
+
+  .button button:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+  }
+
+  .button button:active {
+    background-color: white;
+    animation: none;
+  }
+}

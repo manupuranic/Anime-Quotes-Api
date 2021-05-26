@@ -20,17 +20,9 @@
   position: relative;
   font-family: "Quicksand", sans-serif;
   left: 78%;
+  max-width: 23%;
   font-size: 1.4rem;
 }
-
-/* .anime {
-  position: relative;
-  font-family: "Quicksand", sans-serif;
-  left: 75%;
-  font-size: 1.4rem;
-  word-wrap: break-word|inherit;
-  overflow-wrap: break-word;
-} */
 
 @keyframes list-appear {
   from {
@@ -40,5 +32,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 726px) {
+  .quote-stylings h1 {
+    font-size: 1rem;
+  }
+
+  .character {
+    font-size: 0.8rem;
   }
 }
