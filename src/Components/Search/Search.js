@@ -22,7 +22,6 @@ const Search = (props) => {
       const searchData = "name=" + inputData.toLowerCase();
       quoteCtx.onSearch("character", searchData);
     }
-    debugger;
     if (inputData.length === 0) {
       return;
     }

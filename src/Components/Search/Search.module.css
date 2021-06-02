@@ -6,21 +6,20 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   border-radius: 60px;
   position: relative;
-  left: 20px;
+  left: 4vh;
   max-width: 65%;
   margin: auto;
-  margin-top: 140px;
+  margin-top: 10vh;
   animation: side-down ease-in-out 500ms;
 }
 
 .searchBar input {
   position: relative;
-  max-width: 90%;
-  width: 90%;
+  max-width: 90vw;
+  width: 55vw;
   border: none;
   margin: 0;
   padding: 0.5rem;
-  bottom: 5px;
   caret-color: blue;
   font-size: 1.5rem;
 }
@@ -62,23 +61,17 @@
     padding: 0px;
     max-width: 80%;
     align-items: center;
-    left: 1%;
-    margin-top: 25%;
+    margin-top: 5vh;
   }
 
   .searchBar input {
     padding: 0px;
-    bottom: 0;
-    top: 20px;
-    left: 20px;
   }
 
   .searchBar input::placeholder {
-    font-size: 75%;
+    font-size: 60%;
   }
 
   .button {
-    left: 230px;
-    top: -10px;
   }
 }

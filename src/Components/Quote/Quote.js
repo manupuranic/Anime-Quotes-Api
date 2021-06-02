@@ -13,10 +13,8 @@ const Quote = (props) => {
 
   useEffect(() => {
     const displayQuotes = (data) => {
-      console.log(data);
       let loadedQuote = [];
       for (const key in data) {
-        console.log(key);
         loadedQuote.push({
           id: key,
           anime: data[key].anime,

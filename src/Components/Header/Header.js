@@ -3,7 +3,7 @@ import HeaderButton from "./HeaderButton";
 
 const Header = (props) => {
   return (
-    <header id="header">
+    <header>
       <div className={styles.header}>
         <h1>Anime Quotes</h1>
         <HeaderButton

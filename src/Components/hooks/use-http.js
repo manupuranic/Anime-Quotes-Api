@@ -8,7 +8,6 @@ const useHttp = () => {
     setIsLoading(true);
     setError(null);
     try {
-      console.log(url);
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error("Request Failed!");
